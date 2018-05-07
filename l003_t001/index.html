@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>My homework</title>
+  <meta name="description" content="3rd homework">
+  <meta name="author" content="Denis Verevkin">
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="script.js"></script>
+   
+</head>
+
+
+<body>
+    <script>
+	'use strict';
+	
+	var foodImet001 = "котлетки";
+	var foodImet002 = "пюрешка";
+	var foodImet003 = "макарошки";
+	var foodImet004 = "компотик";
+	var foodImet005 = "оливьешка";
+	var foodImet006 = "супчик";
+	var foodImet007 = "борщик";
+	var foodImet008 = "колбаска";
+	var foodImet009 = "пельмешки";
+	var foodImet010 = "селедочка";
+	
+	var fridgeMachine = new FridgeMachine(2200);
+	
+	var result = fridgeMachine.addFood(foodImet001, foodImet003, foodImet007, foodImet005, foodImet009);
+	console.log(result);
+	
+	var fridgeContent = fridgeMachine.getFood();
+	console.log(fridgeContent);
+		
+    </script>
+  </body>
+</html>
