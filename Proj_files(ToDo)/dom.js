@@ -33,7 +33,7 @@ function viewTodoListDom(itemsType) {
 function editTodoItemDom(todoItem) {
 	
 	
-	document.getElementById(`${todoItem.id}`).innerText = "new txt test test";
+	document.getElementById(`${todoItem.id}`).innerText = todoItem.text;
 	return;
 }
 
