@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>My homework</title>
+  <meta name="description" content="3rd homework">
+  <meta name="author" content="Denis Verevkin">
+  
+  
+   
+</head>
+
+
+<body>
+
+<input value="Загрузить данные из JSON" type="button" onclick="mainScript()" />
+
+<form>
+  <p>Пожалуйста, выбирите, элементы какого типа Вы хотите оствить на странице:</p>
+  <div>
+    <input type="radio" id="completed"
+     name="select-type" value="completed" onclick = "viewTodoList('completed')">
+    <label for="completed">Completed</label>
+
+    <input type="radio" id="not-completed"
+     name="select-type" value="not-completed" onclick = "viewTodoList('not_completed')">
+    <label for="not-completed">Not_completed</label>
+
+    <input type="radio" id="all"
+     name="select-type" value="all" onclick = "viewTodoList('all')">
+    <label for="all">All</label>
+  </div>
+ 
+</form>
+ <ul id="test-list"></ul>
+ <input value="Добавить дополнительный todoItem" type="button" onclick="addNewTodoItem()" />
+ 
+</body>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="todos.json"></script>
+  <script src="script.js"></script>
+  <script src="functions.js"></script>
+  <script src="dom.js"></script>
+
+
+  
+  
+</html>
